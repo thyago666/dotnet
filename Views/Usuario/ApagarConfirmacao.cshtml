@@ -1,0 +1,8 @@
+﻿@model UsuarioModel
+<div class="text-center">
+	<h1>Deseja realmente excluir o usuário (@Model.Nome)?</h1>
+
+</div>
+
+<a class="btn btn-primary btn-block" role="button" asp-controller="Usuario" asp-action="Index">Cancelar Exclusão </a>
+<a class="btn btn-danger btn-block" role="button" asp-controller="Usuario" asp-action="Apagar" asp-route-id="@Model.Id">Confirmar Exclusão</a>
